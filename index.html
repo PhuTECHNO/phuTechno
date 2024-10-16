@@ -353,11 +353,6 @@
             const offset = -currentIndex * 500;
             document.getElementById('carouselImages').style.transform = `translateX(${offset}px)`;
         }
-        <!-- Video YouTube -->
-<div class="youtube-video" id="youtubeVideo" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 12;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ng3X39lenvg" frameborder="0" allowfullscreen></iframe>
-</div>
-
 
         setInterval(() => {
             moveCarousel(1);
@@ -373,20 +368,16 @@
         }
 
         function showCityQuality() {
-    const description = document.getElementById('description');
-    description.innerHTML = ".";
+            const description = document.getElementById('description');
+            description.innerHTML = "City Quality focuses on the livability, environmental health, and economic vitality of urban spaces. It emphasizes creating inclusive, safe, and sustainable communities. Enhancing public spaces and ensuring access to services contribute to overall quality of life.";
 
-    const futureVideoBackground = document.getElementById('futureVideoBackground');
-    futureVideoBackground.style.display = 'block'; // Hiện video nền tương lai
+            const futureVideoBackground = document.getElementById('futureVideoBackground');
+            futureVideoBackground.style.display = 'block'; // Hiện video nền tương lai
 
-    // Hiện video YouTube
-    const youtubeVideo = document.getElementById('youtubeVideo');
-    youtubeVideo.style.display = 'block'; // Hiện video YouTube
-
-    showAdditionalContent();
-    showFutureTitle();
-    document.body.style.backgroundImage = "url('1.jpg')";
-}
+            showAdditionalContent();
+            showFutureTitle();
+            document.body.style.backgroundImage = "url('1.jpg')";
+        }
 
         function hideVideo() {
             const overlay = document.getElementById('overlay');
